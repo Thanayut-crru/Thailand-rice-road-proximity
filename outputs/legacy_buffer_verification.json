@@ -1,0 +1,26 @@
+{
+  "test": "B2 == binary_dilation(B1, disk(1))",
+  "mathematical_identity": "disk(2) on Z^2 == disk(1) Minkowski-sum disk(1)",
+  "buffer_1px": "road_buffer_30m_30m.tif",
+  "buffer_2px": "road_buffer_50m_30m.tif",
+  "shape_rows_cols": [
+    55111,
+    30775
+  ],
+  "pixel_count": 1696041025,
+  "tile_size": 2048,
+  "tile_count": 432,
+  "crs": "EPSG:4326",
+  "pixel_size_degrees": [
+    0.00026949458523585647,
+    0.00026949458523585647
+  ],
+  "mismatch_pixels": 0,
+  "extra_pixels": 0,
+  "missing_pixels": 0,
+  "buffer_1px_positive_pixels": 57149269,
+  "buffer_2px_positive_pixels": 83143109,
+  "positive_pixel_ratio_b2_over_b1": 1.4548411634101566,
+  "exact_match": true,
+  "interpretation": "The stored legacy B2 raster is exactly the one-pixel binary dilation of stored B1 on the shared EPSG:4326 grid. Its legacy 50 m label therefore corresponds to the two-pixel setting (approximately 60 m), not an independently verified exact metric radius."
+}
