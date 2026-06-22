@@ -18,7 +18,7 @@ authors:
   - family-names: "Klinhnu"
     given-names: "Jumrus"
     affiliation: "Department of Digital Technology, Chiang Rai Rajabhat University"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-06-23"
 repository-code: "https://github.com/Thanayut-crru/Thailand-rice-road-proximity"
 license: MIT
