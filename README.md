@@ -1,5 +1,7 @@
 # Thailand rice-road proximity: road-class sensitivity
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20801451.svg)](https://doi.org/10.5281/zenodo.20801451)
+
 This reproducibility repository contains code, derived outputs, figures, and
 method documentation for a sensitivity analysis of 2023 Thai rice area near
 mapped roads. It does not contain or distribute the unpublished manuscript.
@@ -62,3 +64,9 @@ python scripts/verify_legacy_buffer_dilation.py `
 The rice maps represent 2023, while the OSM snapshot was downloaded on
 10 June 2026. This temporal mismatch must be retained when interpreting or
 reusing the results.
+
+## Citation
+
+Changruenngam, T., Surina, F., Phasitvilaitham, K., Nanglae, S., & Klinhnu, J.
+(2026). *Thailand rice-road proximity: road-class sensitivity* (Version 1.0.2)
+[Software]. Zenodo. https://doi.org/10.5281/zenodo.20801451
