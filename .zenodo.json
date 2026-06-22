@@ -1,0 +1,39 @@
+{
+  "title": "Thailand rice-road proximity: road-class sensitivity",
+  "description": "Code, derived results, automated checks, and method documentation for a reproducible road-class sensitivity analysis of 2023 rice-road proximity in Thailand.",
+  "upload_type": "software",
+  "publication_date": "2026-06-23",
+  "version": "1.0.0",
+  "license": "MIT",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Changruenngam, Thanayut",
+      "affiliation": "Department of Science and Technology, Chiang Rai Rajabhat University"
+    },
+    {
+      "name": "Surina, Farung",
+      "affiliation": "Department of Science and Technology, Chiang Rai Rajabhat University"
+    },
+    {
+      "name": "Phasitvilaitham, Kritsaphong",
+      "affiliation": "Department of Science and Technology, Chiang Rai Rajabhat University"
+    },
+    {
+      "name": "Nanglae, Suruswadee",
+      "affiliation": "Department of Science and Technology, Chiang Rai Rajabhat University"
+    },
+    {
+      "name": "Klinhnu, Jumrus",
+      "affiliation": "Department of Digital Technology, Chiang Rai Rajabhat University"
+    }
+  ],
+  "keywords": [
+    "rice",
+    "road proximity",
+    "OpenStreetMap",
+    "sensitivity analysis",
+    "geospatial analysis",
+    "Thailand"
+  ]
+}
