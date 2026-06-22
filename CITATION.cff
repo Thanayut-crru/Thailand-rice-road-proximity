@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the archived software release."
+title: "Thailand rice-road proximity: road-class sensitivity"
+type: software
+authors:
+  - family-names: "Changruenngam"
+    given-names: "Thanayut"
+    affiliation: "Department of Science and Technology, Chiang Rai Rajabhat University"
+  - family-names: "Surina"
+    given-names: "Farung"
+    affiliation: "Department of Science and Technology, Chiang Rai Rajabhat University"
+  - family-names: "Phasitvilaitham"
+    given-names: "Kritsaphong"
+    affiliation: "Department of Science and Technology, Chiang Rai Rajabhat University"
+  - family-names: "Nanglae"
+    given-names: "Suruswadee"
+    affiliation: "Department of Science and Technology, Chiang Rai Rajabhat University"
+  - family-names: "Klinhnu"
+    given-names: "Jumrus"
+    affiliation: "Department of Digital Technology, Chiang Rai Rajabhat University"
+version: "1.0.0"
+date-released: "2026-06-23"
+repository-code: "https://github.com/Thanayut-crru/Thailand-rice-road-proximity"
+license: MIT
+keywords:
+  - rice
+  - road proximity
+  - OpenStreetMap
+  - sensitivity analysis
+  - geospatial analysis
+  - Thailand
