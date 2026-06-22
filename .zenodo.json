@@ -3,7 +3,7 @@
   "description": "Code, derived results, automated checks, and method documentation for a reproducible road-class sensitivity analysis of 2023 rice-road proximity in Thailand.",
   "upload_type": "software",
   "publication_date": "2026-06-23",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "access_right": "open",
   "creators": [
