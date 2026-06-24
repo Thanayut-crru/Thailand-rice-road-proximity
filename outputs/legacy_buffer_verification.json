@@ -22,5 +22,5 @@
   "buffer_2px_positive_pixels": 83143109,
   "positive_pixel_ratio_b2_over_b1": 1.4548411634101566,
   "exact_match": true,
-  "interpretation": "The stored legacy B2 raster is exactly the one-pixel binary dilation of stored B1 on the shared EPSG:4326 grid. Its legacy 50 m label therefore corresponds to the two-pixel setting (approximately 60 m), not an independently verified exact metric radius."
+  "interpretation": "The archived project B2 raster is exactly the one-pixel binary dilation of archived B1 on the shared EPSG:4326 grid. Its archived 50 m label therefore corresponds to the two-pixel setting (approximately 60 m), not an independently verified exact metric radius."
 }
