@@ -5,6 +5,16 @@
 How much do national and regional rice-road proximity estimates change when
 local road classes are added to the road network?
 
+## Input data
+
+The major- and minor-season Thailand rice rasters for 2023 are from the
+Global Crop Dataset–Rice (GCD-Rice), Science Data Bank
+([DOI 10.57760/sciencedb.21665](https://doi.org/10.57760/sciencedb.21665)).
+Road geometry is from the 10 June 2026 Geofabrik extract of OpenStreetMap.
+The August 2023 VIIRS DNB raster supplies target-grid geometry only; radiance
+values are not used. Exact input paths and rice-file checksums are listed in
+`data/README.md`.
+
 ## Cumulative scenarios
 
 1. **G1 major:** motorway, trunk, primary and their link classes.
@@ -21,17 +31,20 @@ For every group, road centrelines are rasterized independently with
 `all_touched=True` on the same native GCD-Rice EPSG:4326 grid (nominal 30 m).
 Circular binary dilation uses radii of 1 and 2 pixels, reported as approximately
 30 and 60 m. Because the grid is geographic, both values are nominal rather
-than exact metric buffers. Legacy buffer rasters are not reused in the analysis.
+than exact metric buffers. Pre-existing project buffer rasters are not reused in
+the analysis.
 
-An independent raster audit nevertheless resolves the legacy distance label.
-On the integer grid, `disk(2) = disk(1) ⊕ disk(1)`. Across the complete
-55,111 × 30,775 grid, the stored nominal 50-m raster was exactly equal to
-`binary_dilation(stored nominal 30-m raster, disk(1))`: all 1,696,041,025 pixels
-matched (`extra = 0`, `missing = 0`). Thus, the stored legacy pair encodes the
-same one-/two-pixel dilation relationship. Its “50 m” label denotes the
-two-pixel setting (~60 m on the nominal 30-m grid), not a verified exact 50-m
-metric radius. The executable audit and machine-readable result are provided in
-`scripts/verify_legacy_buffer_dilation.py` and
+An independent raster audit nevertheless documents how archived project buffer
+labels relate to this raster definition. The archived rasters are not treated as
+a prior published analysis or as an external validation dataset. On the integer
+grid, `disk(2) = disk(1) ⊕ disk(1)`. Across the complete
+55,111 × 30,775 grid, the archived nominal 50-m raster was exactly equal to
+`binary_dilation(archived nominal 30-m raster, disk(1))`: all 1,696,041,025
+pixels matched (`extra = 0`, `missing = 0`). Thus, the archived project pair
+encodes the same one-/two-pixel dilation relationship. Its “50 m” label denotes
+the two-pixel setting (~60 m on the nominal 30-m grid), not a verified exact
+50-m metric radius. The executable audit and machine-readable result are
+provided in `scripts/verify_legacy_buffer_dilation.py` and
 `outputs/legacy_buffer_verification.json`.
 
 For every scenario and rice season:
