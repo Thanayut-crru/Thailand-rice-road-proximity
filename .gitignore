@@ -1,0 +1,11 @@
+_work/
+__pycache__/
+*.pyc
+.venv/
+.idea/
+.vscode/
+data/raw/
+manuscripts/
+outputs/rasters/*.tif
+*.aux
+*.log

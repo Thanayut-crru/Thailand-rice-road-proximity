@@ -35,12 +35,19 @@ full-resolution PNG maps remain in the repository for visual review. Published
 area fields are calculated in acres using
 `1 km² = 247.105381467 acres`; they are not relabelled values.
 
-## Legacy-buffer audit
+The 2023 major- and minor-season rice maps are country files from the
+Global Crop Dataset–Rice (GCD-Rice), archived by Science Data Bank under
+[DOI 10.57760/sciencedb.21665](https://doi.org/10.57760/sciencedb.21665).
+The raw rasters are not redistributed here; exact filenames, checksums, and
+the download record are documented in `data/README.md`.
 
-The analysis does not reuse legacy buffers. A separate full-grid audit proves
-that the stored legacy pair has an exact one-/two-pixel dilation relationship.
-The audit tested 1,696,041,025 pixels and found zero mismatches. See
-`outputs/legacy_buffer_verification.json`.
+## Archived project-buffer audit
+
+The analysis does not reuse pre-existing project buffers. A separate full-grid
+audit documents that the archived project pair has an exact one-/two-pixel
+dilation relationship. The archived rasters are not treated as a prior published
+analysis or as an external validation dataset. The audit tested 1,696,041,025
+pixels and found zero mismatches. See `outputs/legacy_buffer_verification.json`.
 
 Reproduce the audit without loading the road extract:
 
@@ -70,3 +77,10 @@ reusing the results.
 Changruenngam, T., Surina, F., Phasitvilaitham, K., Nanglae, S., & Klinhnu, J.
 (2026). *Thailand rice-road proximity: road-class sensitivity* (Version 1.0.2)
 [Software]. Zenodo. https://doi.org/10.5281/zenodo.20801451
+
+## External data citation
+
+Users must also cite the original GCD-Rice, OpenStreetMap/Geofabrik, VIIRS,
+and administrative-boundary data sources appropriate to their reuse. This
+repository's Zenodo DOI covers the software and derived reproducibility
+package; it does not replace citations for externally produced input data.

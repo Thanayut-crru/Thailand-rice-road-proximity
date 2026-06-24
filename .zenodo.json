@@ -35,5 +35,17 @@
     "sensitivity analysis",
     "geospatial analysis",
     "Thailand"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.57760/sciencedb.21665",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/Thanayut-crru/Thailand-rice-road-proximity",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
   ]
 }

@@ -18,7 +18,11 @@ if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
 python "$Root\scripts\render_raster_maps.py" --boundary $Boundary --dpi 600
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+python "$Root\scripts\render_combined_map_panel.py" --boundary $Boundary --dpi 600
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 python "$Root\scripts\draw_sensitivity_flowchart.py"
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+python "$Root\scripts\plot_summary_figures.py"
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 python -m unittest discover -s "$Root\tests" -v
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

@@ -7,12 +7,13 @@ and `unclassified` roads. The analysis therefore cannot be interpreted as an
 estimate for major illuminated roads alone.
 
 All G1, G2 and G3 results below were rebuilt from road centrelines with the same
-`all_touched=True` rasterization and circular 1-/2-pixel dilation. No legacy
-buffer raster was reused. A separate full-grid audit explains why G3 totals are
-identical to the earlier pooled run: the stored legacy nominal 50-m raster equals
-one additional `disk(1)` dilation of the stored nominal 30-m raster at every one
-of 1,696,041,025 pixels. The legacy “50 m” label therefore represents the same
-two-pixel (~60 m) setting, not a verified exact 50-m metric radius.
+`all_touched=True` rasterization and circular 1-/2-pixel dilation. No
+pre-existing buffer raster was reused. A separate full-grid audit documents why
+the rebuilt all-class totals match the archived project buffer rasters: the
+archived nominal 50-m raster equals one additional `disk(1)` dilation of the
+archived nominal 30-m raster at every one of 1,696,041,025 pixels. The archived
+“50 m” label therefore represents the same two-pixel (~60 m) setting, not a
+verified exact 50-m metric radius.
 
 | Rice | Radius | G1 major roads | G2 + secondary/tertiary | G3 all 11 |
 |---|---:|---:|---:|---:|
